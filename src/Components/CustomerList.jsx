@@ -21,3 +21,5 @@ function CustomerList({customers, onCustomerSelect}) {
     )
     
 }
+
+export default CustomerList;
