@@ -1,1 +1,17 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/* General root settings */
+:root {
+    scroll-behavior: smooth;
+    --primary: #4154f1;
+    --secondary: #717ff5;
+    --bgColor: #f6f9ff;
+
+}
+
+body {
+    font-family:"Open Sans", sans-serif;
+    color: #444444;
+    background: var(--bgColor);
+}
