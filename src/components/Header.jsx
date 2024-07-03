@@ -1,11 +1,14 @@
 import React from 'react'
 import '../styles/header.css'
+import Logo from './Logo';
 
 function Header() {
   return (
-      <Header id = 'header' className='header fixed-top d-flex align-items-center'>
-          Mteja CRM
-      </Header>
+    <header id="header" className="header fixed-top d-flex align-items-center">
+      <Logo />
+      {/* searchbar */}
+      {/* navbar */}
+      </header>
   )
 }
 
