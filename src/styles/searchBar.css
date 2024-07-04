@@ -1,4 +1,4 @@
-.header .search-bar {
+ .search-bar {
     min-width: 360px;
     padding: 0 20px;
 
@@ -26,7 +26,7 @@
     opacity: 1;
 }
 
-.header .search-form input {
+ .search-form input {
     border: 0;
     font-size: 14px;
     color: #012970;
