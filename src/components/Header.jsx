@@ -7,9 +7,9 @@ import NavBar from './NavBar';
 function Header() {
   return (
     <header id="header" className="header fixed-top d-flex align-items-center">
-      <Logo />
+      {/* <Logo />
       <SearchBar />
-      <NavBar />
+      <NavBar /> */}
     </header>
   )
 }

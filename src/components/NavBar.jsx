@@ -1,10 +1,15 @@
-import React from 'react'
-import '../styles/navBar.css'
+// import React from 'react'
+// import '../styles/navBar.css'
 
-function NavBar() {
-  return (
-    <div>NavBar</div>
-  )
-}
+// function NavBar() {
+//   return (
+//       <nav className='header-nav ms-auto'>
+//           <ul className='d-flex align-items-center'>
+              
+//         </ul>
+          
+//     </nav>
+//   )
+// }
 
-export default NavBar
+// export default NavBar
