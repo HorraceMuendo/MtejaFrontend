@@ -55,3 +55,9 @@ const AreaCard = ({ colors, percentFillValue, cardInfo }) => {
 };
 
 export default AreaCard;
+
+AreaCard.propTypes = {
+  colors: PropTypes.array.isRequired,
+  percentFillValue: PropTypes.number.isRequired,
+  cardInfo: PropTypes.object.isRequired,
+};
