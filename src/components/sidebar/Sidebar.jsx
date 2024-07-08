@@ -1,4 +1,5 @@
 import React from 'react'
+import "../../styles/sidebar.css"
 import logo from "../../images/logo.jpg"
 import { MdOutlineClose, MdOutlineGridView,MdOutlineBarChart,MdOutlineLogout,MdOutlineSettings } from "react-icons/md";
 import { Link } from 'react-router-dom';

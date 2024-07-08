@@ -38,6 +38,7 @@ body {
   font-family: var(--font-family-lato);
   font-size: var(--font-size);
   font-weight: var(--font-weight);
+  color: var(--base-text-color);
 
     /* Dark mode  */
     --primary-color: #475be8;
@@ -66,6 +67,10 @@ body {
 a {
   text-decoration: none;
 }
+
+/* a:hover {
+    color: var(--side-link-hover-color);
+  } */
 
 button {
   background-color: transparent;
