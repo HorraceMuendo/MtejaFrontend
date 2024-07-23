@@ -5,14 +5,18 @@
     width: 260px;
     height: 100%;
     background-color: var(--secondary-color);
+    background-image: url("../images/logo.jpg"); /* Path to your background image */
     padding: 20px 14px;
-    box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
+    /* box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px; */
+    /* box-shadow: 2px 0 5px rgba(0,0,0,0.1); */
     display: flex;
     flex-direction: column;
     z-index: 999;
     transition: var(--default-transition);
     overflow-y: scroll;
-  
+    opacity: 0.1; /* Adjust the opacity as needed for watermark effect */
+
+
     &::-webkit-scrollbar {
       width: 6px;
     }
