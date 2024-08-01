@@ -1,7 +1,8 @@
 
 import React from 'react'
+import "../styles/Header.css"
 import 
- {BsFillBellFill, BsFillEnvelopeFill, BsPersonCircle, BsSearch, BsJustify}
+ {BsFillBellFill, BsFillEnvelopeFill, BsPersonCircle, BsJustify}
  from 'react-icons/bs'
 
 function Header({OpenSidebar}) {
@@ -11,7 +12,7 @@ function Header({OpenSidebar}) {
             <BsJustify className='icon' onClick={OpenSidebar}/>
         </div>
         <div className='header-left'>
-            <BsSearch  className='icon'/>
+              Naivas CRM
         </div>
         <div className='header-right'>
             <BsFillBellFill className='icon'/>

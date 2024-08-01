@@ -1,22 +1,26 @@
 import React from 'react'
+import '../styles/Sidebar.css'
 import 
 {BsCart3, BsGrid1X2Fill, BsFillArchiveFill, BsFillGrid3X3GapFill, BsPeopleFill, 
   BsListCheck, BsMenuButtonWideFill, BsFillGearFill}
- from 'react-icons/bs'
+    from 'react-icons/bs'
+ import logo from './Images/logo.jpg'
 
 function Sidebar({openSidebarToggle, OpenSidebar}) {
   return (
     <aside id="sidebar" className={openSidebarToggle ? "sidebar-responsive": ""}>
         <div className='sidebar-title'>
-            <div className='sidebar-brand'>
-                <BsCart3  className='icon_header'/> SHOP
-            </div>
+        <div className='sidebar-brand'>
+          <img src={logo} alt="Logo" className='logo-img' />
+        </div>
+              
+              
             <span className='icon close_icon' onClick={OpenSidebar}>X</span>
         </div>
-
+  
         <ul className='sidebar-list'>
             <li className='sidebar-list-item'>
-                <a href="">
+                <a href="/home">
                     <BsGrid1X2Fill className='icon'/> Dashboard
                 </a>
             </li>
@@ -46,8 +50,8 @@ function Sidebar({openSidebarToggle, OpenSidebar}) {
                 </a>
             </li>
             <li className='sidebar-list-item'>
-                <a href="">
-                    <BsFillGearFill className='icon'/> Setting
+                <a href="/user">
+                    <BsFillGearFill className='icon'/> UserUpdate
                 </a>
             </li>
         </ul>
