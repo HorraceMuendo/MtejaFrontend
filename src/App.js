@@ -83,6 +83,11 @@ import User from './pages/UserProfile';
 import Signup from './pages/SignUp';
 import Login from './pages/Login';
 import LandingPage from './pages/LandingPage';  // Import LandingPage
+import Reports from './pages/Reports';
+import ProductList from './pages/Products/ProductList';
+import AddProduct from './pages/Products/AddProduct';
+import Categories from './pages/Products/Categories';
+import CommunicationLogs from './Components/Clients/CommunicationLogs';
 
 function App() {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false);
@@ -105,8 +110,22 @@ function App() {
               <Sidebar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar} />
               <Routes>
                 <Route path="/home" element={<Home />} />
+                <Route path="/products/list" element={<ProductList/>} />
+                <Route path="/products/add" element={<AddProduct/>} />
+                <Route path="/products/categories" element={<Categories/>} />
                 <Route path="/user" element={<User />} />
+                <Route path="/reports" element={<Reports/>} />
                 {/* Add other routes as needed */}
+                <Route path="/communication" element={<CommunicationLogs />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="/home" element={<Home />} />
+
+                
+
+
+
+
               </Routes>
             </div>
           }

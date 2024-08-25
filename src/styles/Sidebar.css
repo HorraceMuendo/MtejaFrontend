@@ -68,3 +68,33 @@
   /* End Sidebar  */
 
   /* side bar logo part */
+
+  /* Sidebar.css */
+
+.sidebar-list-item .sidebar-dropdown {
+  display: none;
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-list-item:hover .sidebar-dropdown {
+  display: block;
+}
+
+.sidebar-dropdown {
+  background-color: #f4f4f4;
+  padding-left: 20px;
+}
+
+.sidebar-dropdown li {
+  margin: 10px 0;
+}
+
+.sidebar-dropdown li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar-dropdown li a:hover {
+  color: #007bff;
+}

@@ -1,0 +1,56 @@
+/* .reports {
+    padding: 20px;
+}
+
+.reports h2 {
+    margin-bottom: 20px;
+}
+
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    padding: 5px;
+    width: 100px;
+} */
+.reports {
+    padding: 20px;
+}
+
+.reports h2 {
+    margin-bottom: 20px;
+}
+
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    padding: 5px;
+    width: 100px;
+}
