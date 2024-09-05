@@ -94,20 +94,15 @@ function Sidebar({ openSidebarToggle, OpenSidebar }) {
             <li><a href="/products/categories">Categories</a></li>
           </ul>
         </li>
-        {/* <li className='sidebar-list-item'>
-          <a href="">
-            <BsFillGrid3X3GapFill className='icon'/> Categories
+         <li className='sidebar-list-item'>
+          <a href="#" className="sidebar-dropdown-toggle">
+            <BsFillArchiveFill className='icon'/> Customers
           </a>
-        </li> */}
-        <li className='sidebar-list-item'>
-          <a href="">
-            <BsPeopleFill className='icon'/> Customers
-          </a>
-        </li>
-        <li className='sidebar-list-item'>
-          <a href="">
-            <BsListCheck className='icon'/> Inventory
-          </a>
+          {/* update the routes */}
+          <ul className="sidebar-dropdown">
+            <li><a href="/products/list">Complaints</a></li>
+            <li><a href="/products/add">Compliments</a></li>
+          </ul>
         </li>
         <li className='sidebar-list-item'>
           <a href="/reports">
