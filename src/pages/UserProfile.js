@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Modal, Button, Form } from 'react-bootstrap';
+import {Button, Form } from 'react-bootstrap';
 import { BsPersonCircle } from 'react-icons/bs';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/UserProfile.css'
 
 const UserModal = ({ show, handleClose, userDetails, handleUpdate }) => {
   const [formData, setFormData] = useState(userDetails);
@@ -21,9 +22,9 @@ const UserModal = ({ show, handleClose, userDetails, handleUpdate }) => {
   };
 
   return (
-        // <Modal.Title>User Details</Modal.Title>
       
         <Form onSubmit={handleSubmit}>
+          <Form.Label>User Details</Form.Label>
           <Form.Group controlId="formName">
             <Form.Label>Name</Form.Label>
             <Form.Control

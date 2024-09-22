@@ -1,6 +1,6 @@
 .signup-container {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 70px auto;
     padding: 40px;
     background-color: #f8f9fa;
     border-radius: 8px;
@@ -29,10 +29,12 @@
     padding: 10px;
     font-size: 1rem;
     border-radius: 4px;
+    background-color: orange;
+    border-color: orange;
   }
   
   .signup-button:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+    background-color: darkorange;
+    border-color: darkorange;
   }
   

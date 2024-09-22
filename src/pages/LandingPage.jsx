@@ -7,7 +7,7 @@ function LandingPage() {
       <div className="landing-page-content">
         <h1>Naivas CRM</h1>
         <h2>Welcome to Our System</h2>
-        <p>This is the landing page. Please sign up or log in to continue.</p>
+        <p> Please sign up or log in to continue.</p>
         <a href="/signup" className="btn">Sign Up</a>
         <a href="/login" className="btn">Login</a>
       </div>

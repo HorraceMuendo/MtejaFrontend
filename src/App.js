@@ -10,6 +10,7 @@ import ProductList from './pages/Products/ProductList';
 import AddProduct from './pages/Products/AddProduct';
 import Dashboard from './pages/Dashboard';
 import ReportForm from './pages/Reports/ReportsForm';
+import Enquiries from './pages/Enquiries';
 
 function App() {
   
@@ -28,6 +29,7 @@ function App() {
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/products/list" element={<ProductList/>} />
                 <Route path="/products/add" element={<AddProduct/>} />
+                <Route path="/enquiries" element={<Enquiries />} />
                 <Route path="/user" element={<User />} />
                 <Route path="/report" element={<Reports/>} />  
                 <Route path="/report/add" element={<ReportForm/>} />                          

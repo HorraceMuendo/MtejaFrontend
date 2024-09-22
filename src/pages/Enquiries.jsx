@@ -3,7 +3,7 @@
 // src/components/Enquiries.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import "../../styles/Enquiries.css";
+import "../styles/Enquiries.css";
 
 const Enquiries = () => {
   const [enquiries, setEnquiries] = useState([]);
