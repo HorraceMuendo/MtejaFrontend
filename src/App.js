@@ -4,11 +4,12 @@ import Header from './Components/Header';
 import User from './pages/UserProfile';
 import Signup from './pages/SignUp';
 import Login from './pages/Login';
-import LandingPage from './pages/LandingPage';  // Import LandingPage
-import Reports from './pages/Reports';
+import LandingPage from './pages/LandingPage';  
+import Reports from './pages/Reports/Reports';
 import ProductList from './pages/Products/ProductList';
 import AddProduct from './pages/Products/AddProduct';
 import Dashboard from './pages/Dashboard';
+import ReportForm from './pages/Reports/ReportsForm';
 
 function App() {
   
@@ -28,7 +29,8 @@ function App() {
                 <Route path="/products/list" element={<ProductList/>} />
                 <Route path="/products/add" element={<AddProduct/>} />
                 <Route path="/user" element={<User />} />
-                <Route path="/reports" element={<Reports/>} />              
+                <Route path="/report" element={<Reports/>} />  
+                <Route path="/report/add" element={<ReportForm/>} />                          
               </Routes>
             </div>
           }

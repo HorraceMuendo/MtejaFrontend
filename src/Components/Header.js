@@ -24,7 +24,10 @@ function Header() {
             <NavDropdown.Item as={Link} to="/compliments">Compliments</NavDropdown.Item>
             <NavDropdown.Item as={Link} to="/complaints">Complaints</NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link as={Link} to="/enquiries">Reports</Nav.Link>
+          <NavDropdown title="Reports" id="report-dropdown">
+            <NavDropdown.Item as={Link} to="/report">Report</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/report/add">ReportForm</NavDropdown.Item>
+          </NavDropdown>
           <Nav.Link as={Link} to="/user">Account</Nav.Link>
         </Nav>
       </Navbar.Collapse>
