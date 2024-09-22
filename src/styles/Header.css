@@ -1,23 +1,36 @@
-  /* Header  */
-  .header {
-    grid-area: header;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 30px 0 30px;
-    box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
-  }
-  
-  .menu-icon {
-    display: none;
-  }
 
-  .header-left {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;     /* Center vertically */
-    height: 100%;            /* Full height of the header */
-  }
-  
+.header {
+  transition: all 0.5s;
+  z-index: 997;
+  height: 60px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding-left: 20px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  margin-right: 1rem;
+}
+
+.navbar-brand img {
+  line-height: 1;
+  max-height: 50px;
+  margin-right: 6px;
+  width: 100px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  object-fit: cover;
+  border-radius: 5%; /* Optional: make the logo circular */
+}
+.navbar-brand span {
+  font-size: 26px;
+  font-weight: 500;
+  color: #0b0d11;
+}
+
+
 

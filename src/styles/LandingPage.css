@@ -1,15 +1,14 @@
 
 
-   /* Reset some basic elements */
-body, html, .landing-page {
+ .landing-page {
     margin: 0;
     padding: 0;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1d2634;
-    color: white; /* White text color for better contrast */
+    /* background-color: #1d2634;
+    color: white;  */
   }
   
   .landing-page-content {
@@ -18,7 +17,7 @@ body, html, .landing-page {
   
   .landing-page h1 {
     font-size: 4rem;
-    margin-bottom: 20px;
+    /* margin-bottom: 10px; */
   }
   
   .landing-page h2 {
