@@ -8,6 +8,7 @@ import LandingPage from './pages/LandingPage';  // Import LandingPage
 import Reports from './pages/Reports';
 import ProductList from './pages/Products/ProductList';
 import AddProduct from './pages/Products/AddProduct';
+import Dashboard from './pages/Dashboard';
 
 function App() {
   
@@ -23,6 +24,7 @@ function App() {
             <div className='grid-container'>
               <Header/>
               <Routes>
+                <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/products/list" element={<ProductList/>} />
                 <Route path="/products/add" element={<AddProduct/>} />
                 <Route path="/user" element={<User />} />

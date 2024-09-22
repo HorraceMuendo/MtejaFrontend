@@ -21,11 +21,8 @@ const UserModal = ({ show, handleClose, userDetails, handleUpdate }) => {
   };
 
   return (
-    <Modal show={show} onHide={handleClose}>
-      <Modal.Header closeButton>
-        <Modal.Title>User Details</Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
+        // <Modal.Title>User Details</Modal.Title>
+      
         <Form onSubmit={handleSubmit}>
           <Form.Group controlId="formName">
             <Form.Label>Name</Form.Label>
@@ -49,8 +46,7 @@ const UserModal = ({ show, handleClose, userDetails, handleUpdate }) => {
             Save Changes
           </Button>
         </Form>
-      </Modal.Body>
-    </Modal>
+    
   );
 };
 
