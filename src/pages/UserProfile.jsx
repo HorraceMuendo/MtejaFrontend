@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Button, Form } from 'react-bootstrap';
+import {Button, Container, Form } from 'react-bootstrap';
 import { BsPersonCircle } from 'react-icons/bs';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/UserProfile.css'
@@ -22,9 +22,9 @@ const UserModal = ({ show, handleClose, userDetails, handleUpdate }) => {
   };
 
   return (
-      
-        <Form onSubmit={handleSubmit}>
-          <Form.Label>User Details</Form.Label>
+      <Container className='profile-container'>   
+       <h2 className="user-title">User Details</h2> 
+        <Form className='user-form' onSubmit={handleSubmit}>
           <Form.Group controlId="formName">
             <Form.Label>Name</Form.Label>
             <Form.Control
@@ -43,11 +43,11 @@ const UserModal = ({ show, handleClose, userDetails, handleUpdate }) => {
               onChange={handleChange}
             />
           </Form.Group>
-          <Button variant="primary" type="submit">
+          <Button variant="primary" type="submit" className='user-button'>
             Save Changes
           </Button>
         </Form>
-    
+        </Container>  
   );
 };
 

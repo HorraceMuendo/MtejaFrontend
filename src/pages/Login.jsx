@@ -25,7 +25,7 @@ const Login = () => {
           setMessage('Login successful');
           setIsError(false);
           // Handle successful login, e.g., redirect to a dashboard
-          navigate('/home')
+          navigate('/dashboard')
         }
       })
       .catch(error => {

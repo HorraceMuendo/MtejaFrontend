@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
@@ -26,7 +24,7 @@ function Signup () {
     axios.post('http://localhost:6969/users/signup', values)
       .then(res => {
         console.log("Successfully Registered")
-        navigate('/login'); // Redirect to login page after successful signup
+        navigate('/dashboard'); // Redirect to login page after successful signup
       } )
       .catch(err => console.log(err));
   };
