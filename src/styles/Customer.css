@@ -1,0 +1,53 @@
+
+  /* customerslist.css............................ */
+  .customer-list {
+    width: 80%;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .customer-list h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .customer-list p {
+    text-align: center;
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .customer-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .customer-list li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .customer-list li:nth-child(even) {
+    background-color: #f1f1f1;
+  }
+  
+  .customer-list li:hover {
+    background-color: #e9e9e9;
+  }
+  
+  .customer-list li span {
+    color: #333;
+    font-size: 1rem;
+  }
