@@ -1,4 +1,3 @@
-// ProductList.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import "../../styles/Customer.css";
@@ -25,7 +24,7 @@ const Compliments = () => {
       <ul>
         {compliments.map(compliment => (
           <li key={compliment.id}>
-            {compliment.name} - {compliment.category} - {compliment.price}
+            {compliment.name} - {compliment.email} - {compliment.compliment}
           </li>
         ))}
       </ul>
