@@ -1,0 +1,28 @@
+/* src/styles/contacts.css */
+.contacts {
+    padding: 20px;
+    margin: 60px auto;
+  }
+  
+  .contacts h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .contacts p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .contacts ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .contacts li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  

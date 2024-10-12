@@ -19,10 +19,12 @@ function Header() {
             <NavDropdown.Item as={Link} to="/products/list">List</NavDropdown.Item>
             <NavDropdown.Item as={Link} to="/products/add">Add</NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link as={Link} to="/enquiries">Enquiries</Nav.Link>
+          <Nav.Link as={Link} to="/tasks">Tasks</Nav.Link>
           <NavDropdown title="Customer" id="customer-dropdown">
             <NavDropdown.Item as={Link} to="/compliments">Compliments</NavDropdown.Item>
             <NavDropdown.Item as={Link} to="/complains">Complaints</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/enquiries">Enquiries</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/contact">Contacts</NavDropdown.Item>
           </NavDropdown>
           <NavDropdown title="Reports" id="report-dropdown">
             <NavDropdown.Item as={Link} to="/report">Report</NavDropdown.Item>

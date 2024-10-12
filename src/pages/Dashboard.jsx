@@ -8,21 +8,21 @@ function Dashboard() {
   const [newCustomers, setNewCustomers] = useState(0);
   const [feedbackRate, setFeedbackRate] = useState(0);
 
-  useEffect(() => {
-    const fetchDashboardData = async () => {
-      const response = await axios.get('http://localhost:5000/api/reports');
-      const salesData = response.data.map(report => report.sales);
+  // useEffect(() => {
+  //   const fetchDashboardData = async () => {
+  //     const response = await axios.get('http://localhost:5000/api/reports');
+  //     const salesData = response.data.map(report => report.sales);
       
-      // Calculate total sales
-      setTotalSales(salesData.reduce((acc, sale) => acc + sale, 0));
+  //     // Calculate total sales
+  //     setTotalSales(salesData.reduce((acc, sale) => acc + sale, 0));
       
-      // Example logic for new customers and feedback rate
-      // This is placeholder logic; replace it with your actual data source
-      setNewCustomers(150); // Replace with actual data if available
-      setFeedbackRate(85);  // Replace with actual calculation if available
-    };
-    fetchDashboardData();
-  }, []);
+  //     // Example logic for new customers and feedback rate
+  //     // This is placeholder logic; replace it with your actual data source
+  //     setNewCustomers(150); // Replace with actual data if available
+  //     setFeedbackRate(85);  // Replace with actual calculation if available
+  //   };
+  //   fetchDashboardData();
+  // }, []);
 
   return (
     <Container className="dashboard">

@@ -3,34 +3,34 @@
 // src/components/Enquiries.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import "../styles/Enquiries.css";
+import "../../styles/contacts.css";
 
-const Enquiries = () => {
-  const [enquiries, setEnquiries] = useState([]);
+const Contact = () => {
+  const [contacts, setContacts] = useState([]);
 
   useEffect(() => {
-    const fetchEnquiries = async () => {
+    const fetchContact = async () => {
       try {
-        const response = await axios.get('http://localhost:6969/enquiries/list');
-        setEnquiries(response.data);
+        const response = await axios.get('http://localhost:6969/contact/list');
+        setContacts(response.data);
       } catch (error) {
-        console.error('There was an error fetching the enquiries!', error);
+        console.error('There was an error fetching the contacts!', error);
       }
     };
 
-    fetchEnquiries();
+    fetchContact();
   }, []);
 
   return (
-    <div className="enquiries">
-      <h1>Enquiries</h1>
-      <p>Here you can see the list of all enquiries.</p>
+    <div className="contacts">
+      <h1>Contacts</h1>
       <ul>
-        {enquiries.map(enquiry => (
-          <li key={enquiry.id}>
-            <strong>Name:</strong> {enquiry.name} - 
-            <strong> Email:</strong> {enquiry.email} - 
-            <strong> Message:</strong> {enquiry.productdetails}
+        {contacts.map(Contact => (
+          <li key={Contact.id}>
+            <strong>Name:</strong> {Contact.name} - 
+            <strong> Email:</strong> {Contact.email} - 
+            <strong> Subject:</strong> {Contact.subject}-
+            <strong> Message:</strong> {Contact.message}
           </li>
         ))}
       </ul>
@@ -38,4 +38,4 @@ const Enquiries = () => {
   );
 };
 
-export default Enquiries;
+export default Contact;

@@ -10,9 +10,11 @@ import ProductList from './pages/Products/ProductList';
 import AddProduct from './pages/Products/AddProduct';
 import Dashboard from './pages/Dashboard';
 import ReportForm from './pages/Reports/ReportsForm';
-import Enquiries from './pages/Enquiries';
+import Enquiries from './pages/Customers/Enquiries';
 import Compliments from './pages/Customers/Compliments';
 import Complains from './pages/Customers/Complains';
+import Contact from './pages/Customers/Contact';
+import TaskManagement from './pages/TaskManagement';
 
 function App() {
   
@@ -31,9 +33,11 @@ function App() {
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/products/list" element={<ProductList/>} />
                 <Route path="/products/add" element={<AddProduct/>} />
+                <Route path="/tasks" element={<TaskManagement />} />
                 <Route path="/enquiries" element={<Enquiries />} />
                 <Route path="/complains" element={<Complains />} />
                 <Route path="/compliments" element={<Compliments />} />
+                <Route path="/contact" element={<Contact />} />
 
                 <Route path="/user" element={<User />} />
                 <Route path="/report" element={<Reports/>} />  

@@ -24,7 +24,7 @@ const Complains = () => {
       <ul>
         {complains.map(complain => (
           <li key={complain.id}>
-            {complain.name} - {complain.category} - {complain.price}
+            {complain.name} - {complain.email} - {complain.complain}
           </li>
         ))}
       </ul>
