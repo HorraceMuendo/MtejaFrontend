@@ -22,7 +22,6 @@ const ProductList = () => {
   return (
     <div className="product-list">
       <h1>Product List</h1>
-      <p>Here you can see the list of all products.</p>
       <ul>
         {products.map(product => (
           <li key={product.id}>

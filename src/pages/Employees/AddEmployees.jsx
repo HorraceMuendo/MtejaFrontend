@@ -5,22 +5,22 @@ import axios from 'axios';
 import "../../styles/Products.css";
 
 const AddEmployee = () => {
-  const [employeeName, setEmployeeName] = useState('');
-  const [employeeEmail, setEmployeeEmail] = useState('');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
   
 
   const handleAddProduct = async (e) => {
     e.preventDefault();
     try {
       const response = await axios.post('http://localhost:6969/employee/add', {
-        employeeName: employeeName,
-        employeeEmail: employeeEmail,
+        name: name,
+        email: email,
         
       });
       console.log('Product Added:', response.data);
       // Clear the form fields after successful submission
-      employeeName('');
-      employeeEmail('');
+      setName('');
+      setEmail('');
       
     } catch (error) {
       console.error('There was an error adding the product!', error);
@@ -36,8 +36,8 @@ const AddEmployee = () => {
           <input
             type="text"
             id="productName"
-            value={employeeName}
-            onChange={(e) => setEmployeeName(e.target.value)}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
           />
         </div>
         <div>
@@ -45,8 +45,8 @@ const AddEmployee = () => {
           <input
             type="text"
             id="productPrice"
-            value={employeeEmail}
-            onChange={(e) => setEmployeeEmail(e.target.value)}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <button type="submit">Add Employee</button>

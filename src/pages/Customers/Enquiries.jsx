@@ -24,7 +24,6 @@ const Enquiries = () => {
   return (
     <div className="enquiries">
       <h1>Enquiries</h1>
-      <p>Here you can see the list of all enquiries.</p>
       <ul>
         {enquiries.map(enquiry => (
           <li key={enquiry.id}>

@@ -17,8 +17,8 @@ function Header() {
           <Nav.Link as={Link} to="/dashboard">Dashboard</Nav.Link>
           <Nav.Link as={Link} to="/tasks">Tasks</Nav.Link>
           <NavDropdown title="Employees" id="products-dropdown">
-            <NavDropdown.Item as={Link} to="/products/list">List</NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="/products/add">Add</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/employee/list">List</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/employee/add">Add</NavDropdown.Item>
           </NavDropdown>
           <NavDropdown title="Products" id="products-dropdown">
             <NavDropdown.Item as={Link} to="/products/list">List</NavDropdown.Item>

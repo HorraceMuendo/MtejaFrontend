@@ -15,6 +15,8 @@ import Compliments from './pages/Customers/Compliments';
 import Complains from './pages/Customers/Complains';
 import Contact from './pages/Customers/Contact';
 import TaskManagement from './pages/TaskManagement';
+import Employees from './pages/Employees/Employees';
+import AddEmployee from './pages/Employees/AddEmployees';
 
 function App() {
   
@@ -33,6 +35,8 @@ function App() {
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/products/list" element={<ProductList/>} />
                 <Route path="/products/add" element={<AddProduct/>} />
+                <Route path="/employee/list" element={<Employees/>} />
+                <Route path="/employee/add" element={<AddEmployee/>} />
                 <Route path="/tasks" element={<TaskManagement />} />
                 <Route path="/enquiries" element={<Enquiries />} />
                 <Route path="/complains" element={<Complains />} />
