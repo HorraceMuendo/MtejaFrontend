@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const TaskManagement = () => {
   const [tasks, setTasks] = useState([]);
-  const [taskName, setTaskName] = useState('');
+  const [taskname, setTaskname] = useState('');
   const [assignedTo, setAssignedTo] = useState('');
   const [status, setStatus] = useState('Pending');
 
@@ -13,15 +13,15 @@ const TaskManagement = () => {
   const addTask = async (e) => {
     e.preventDefault();
       try {
-        if (!taskName) {
+        if (!taskname) {
           alert('Please fill in all fields')
         }
-        const response = await axios.post('http//localhost/6969/task', {
-          taskName:taskName,
+        const response = await axios.post('http//localhost/6969/task/add', {
+          taskName:taskname,
 
         });
         console.log("Task added :", response.data);
-        setTaskName('');
+        setTaskname('');
 
       } catch (error) {
         console.log('Error creating the Task:', error)
@@ -35,13 +35,13 @@ const TaskManagement = () => {
     
     const newTask = {
       id: Date.now(),
-      name: taskName,
+      name: taskname,
       assignedTo,
       status,
     };
 
     setTasks([...tasks, newTask]);
-    setTaskName('');
+    setTaskname('');
     setAssignedTo('');
     // setStatus('Pending');
   };
@@ -67,8 +67,8 @@ const TaskManagement = () => {
         <input 
           type="text" 
           placeholder="Task Name" 
-          value={taskName} 
-          onChange={(e) => setTaskName(e.target.value)} 
+          value={taskname} 
+          onChange={(e) => setTaskname(e.target.value)} 
         />
         <input 
           type="text" 
