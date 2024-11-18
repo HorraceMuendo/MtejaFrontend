@@ -17,6 +17,7 @@ import Contact from './pages/Customers/Contact';
 import TaskManagement from './pages/TaskManagement';
 import Employees from './pages/Employees/Employees';
 import AddEmployee from './pages/Employees/AddEmployees';
+import AnalyticsDashboard from './pages/Analytics';
 
 function App() {
   
@@ -45,7 +46,10 @@ function App() {
 
                 <Route path="/user" element={<User />} />
                 <Route path="/report" element={<Reports/>} />  
-                <Route path="/report/add" element={<ReportForm/>} />                          
+                <Route path="/report/add" element={<ReportForm/>} />  
+                <Route path="/analytics" element={<AnalyticsDashboard />} />
+
+
               </Routes>
             </div>
           }
