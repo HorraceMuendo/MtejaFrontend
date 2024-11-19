@@ -18,6 +18,8 @@ import TaskManagement from './pages/TaskManagement';
 import Employees from './pages/Employees/Employees';
 import AddEmployee from './pages/Employees/AddEmployees';
 import AnalyticsDashboard from './pages/Analytics';
+import CampaignForm from './pages/Marketing/CampaignForm';
+import CampaignList from './pages/Marketing/CampaignList';
 
 function App() {
   
@@ -48,6 +50,10 @@ function App() {
                 <Route path="/report" element={<Reports/>} />  
                 <Route path="/report/add" element={<ReportForm/>} />  
                 <Route path="/analytics" element={<AnalyticsDashboard />} />
+                <Route path="/contact" element={<CampaignForm />} />
+                <Route path="/contact" element={<CampaignList/>} />
+
+
 
 
               </Routes>
