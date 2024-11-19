@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Table, Button, Form } from 'react-bootstrap';
-import '../styles/SalesReportPage.css'; // Add CSS file for styling
+// import '../styles/SalesReportPage.css'; // Add CSS file for styling
 
 const SalesReportPage = () => {
   const [salesData, setSalesData] = useState([]);

@@ -18,8 +18,13 @@ import TaskManagement from './pages/TaskManagement';
 import Employees from './pages/Employees/Employees';
 import AddEmployee from './pages/Employees/AddEmployees';
 import AnalyticsDashboard from './pages/Analytics';
-import CampaignForm from './pages/Marketing/CampaignForm';
-import CampaignList from './pages/Marketing/CampaignList';
+import Dash from './pages/Sales/Dashboard';
+import LeadForm from './pages/Sales/LeadForm';
+import LeadsList from './pages/Sales/LeadList';
+import SalesChart from './pages/Sales/SalesChart';
+import SalesReportPage from './pages/Sales/SalesReportPage';
+
+
 
 function App() {
   
@@ -45,13 +50,16 @@ function App() {
                 <Route path="/complains" element={<Complains />} />
                 <Route path="/compliments" element={<Compliments />} />
                 <Route path="/contact" element={<Contact />} />
-
+                
                 <Route path="/user" element={<User />} />
                 <Route path="/report" element={<Reports/>} />  
                 <Route path="/report/add" element={<ReportForm/>} />  
                 <Route path="/analytics" element={<AnalyticsDashboard />} />
-                <Route path="/campaignForm" element={<CampaignForm />} />
-                <Route path="/campaignList" element={<CampaignList/>} />
+                <Route path="/sales/dashboard" element={<Dash />} />
+                <Route path="/sales/leadform" element={<LeadForm />} />
+                <Route path="/sales/leadlist" element={<LeadsList />} />
+                <Route path="/sales/saleschart" element={<SalesChart />} />
+                <Route path="/sales/sales-report-page" element={<SalesReportPage />} />
 
 
 
