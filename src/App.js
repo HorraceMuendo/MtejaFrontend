@@ -50,8 +50,8 @@ function App() {
                 <Route path="/report" element={<Reports/>} />  
                 <Route path="/report/add" element={<ReportForm/>} />  
                 <Route path="/analytics" element={<AnalyticsDashboard />} />
-                <Route path="/contact" element={<CampaignForm />} />
-                <Route path="/contact" element={<CampaignList/>} />
+                <Route path="/campaignForm" element={<CampaignForm />} />
+                <Route path="/campaignList" element={<CampaignList/>} />
 
 
 
