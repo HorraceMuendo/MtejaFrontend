@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "../../styles/leads.css"
 
 const LeadForm = () => {
   const [lead, setLead] = useState({
@@ -21,7 +22,7 @@ const LeadForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5000/api/leads", lead)
+      .post("http://localhost:6969/sales/leads", lead)
       .then((response) => {
         console.log("Lead added successfully", response.data);
         setLead({ name: "", email: "", phone: "", status: "New", value: 0 });
@@ -30,7 +31,7 @@ const LeadForm = () => {
   };
 
   return (
-    <div>
+    <div className="leads">
       <h2>Add Lead</h2>
       <form onSubmit={handleSubmit}>
         <input
@@ -61,13 +62,13 @@ const LeadForm = () => {
           <option value="Closed Won">Closed Won</option>
           <option value="Closed Lost">Closed Lost</option>
         </select>
-        <input
+        {/* <input
           type="number"
           name="value"
           value={lead.value}
           onChange={handleChange}
           placeholder="Deal Value"
-        />
+        /> */}
         <button type="submit">Submit</button>
       </form>
     </div>

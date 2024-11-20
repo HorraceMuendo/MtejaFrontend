@@ -6,9 +6,9 @@ const Dashboard = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/sales/performance")
+      .get("http://localhost:6969/sales/performance")
       .then((response) => setPerformance(response.data))
-      .catch((error) => console.error("Error fetching performance data", error));
+      .catch((error) => console.error("Front: Error fetching performance data", error));
   }, []);
 
   return (

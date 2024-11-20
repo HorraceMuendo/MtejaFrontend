@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "../../styles/leads.css"
 
 const LeadsList = () => {
   const [leads, setLeads] = useState([]);
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/leads")
+      .get("http://localhost:6969/sales/leads")
       .then((response) => setLeads(response.data))
       .catch((error) => console.error("Error fetching leads", error));
   }, []);
@@ -21,7 +22,7 @@ const LeadsList = () => {
   };
 
   return (
-    <div>
+    <div className="leads">
       <h2>Leads List</h2>
       <table>
         <thead>
