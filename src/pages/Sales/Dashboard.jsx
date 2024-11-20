@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "../../styles/leads.css"
+
 
 const Dashboard = () => {
   const [performance, setPerformance] = useState({ totalLeads: 0, closedWon: 0, winRate: 0 });
@@ -12,7 +14,7 @@ const Dashboard = () => {
   }, []);
 
   return (
-    <div>
+    <div className="leads">
       <h2>Sales Dashboard</h2>
       <div>
         <p>Total Leads: {performance.totalLeads}</p>

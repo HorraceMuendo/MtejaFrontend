@@ -23,6 +23,7 @@ import LeadForm from './pages/Sales/LeadForm';
 import LeadsList from './pages/Sales/LeadList';
 import SalesChart from './pages/Sales/SalesChart';
 import SalesReportPage from './pages/Sales/SalesReportPage';
+import SalesInputForm from './pages/Sales/SaleInputForm';
 
 
 
@@ -60,6 +61,7 @@ function App() {
                 <Route path="/sales/leadlist" element={<LeadsList />} />
                 <Route path="/sales/saleschart" element={<SalesChart />} />
                 <Route path="/sales/sales-report-page" element={<SalesReportPage />} />
+                <Route path="/sales/saleinputform" element={<SalesInputForm />} />
 
 
 

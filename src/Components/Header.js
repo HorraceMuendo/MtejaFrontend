@@ -32,8 +32,9 @@ function Header() {
           </NavDropdown>
           <NavDropdown title="Sales" id="report-dropdown">
           <NavDropdown.Item as={Link} to="/sales/dashboard">Dashboard</NavDropdown.Item>
-            {/* <NavDropdown.Item as={Link} to="/sales/saleschart">Sales Chart</NavDropdown.Item> */}
+            <NavDropdown.Item as={Link} to="/sales/saleschart">Sales Chart</NavDropdown.Item>
             {/* <NavDropdown.Item as={Link} to="/sales/sales-report-page">Sales Report</NavDropdown.Item> */}
+            <NavDropdown.Item as={Link} to="/sales/saleinputform">Add Sales</NavDropdown.Item>
             <NavDropdown.Item as={Link} to="/sales/leadform">Lead Form</NavDropdown.Item>
             <NavDropdown.Item as={Link} to="/sales/leadlist">Lead Report</NavDropdown.Item>
 
