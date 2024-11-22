@@ -15,7 +15,7 @@ const Dashboard = () => {
 
   return (
     <div className="leads">
-      <h2>Sales Dashboard</h2>
+      <h2> Dashboard</h2>
       <div>
         <p>Total Leads: {performance.totalLeads}</p>
         <p>Closed Won: {performance.closedWon}</p>

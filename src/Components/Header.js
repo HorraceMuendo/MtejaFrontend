@@ -30,7 +30,7 @@ function Header() {
             <NavDropdown.Item as={Link} to="/enquiries">Enquiries</NavDropdown.Item>
             <NavDropdown.Item as={Link} to="/contact">Contacts</NavDropdown.Item>
           </NavDropdown>
-          <NavDropdown title="Sales" id="report-dropdown">
+          <NavDropdown title="Sales and Leads" id="report-dropdown">
           <NavDropdown.Item as={Link} to="/sales/dashboard">Dashboard</NavDropdown.Item>
             <NavDropdown.Item as={Link} to="/sales/saleschart">Sales Chart</NavDropdown.Item>
             {/* <NavDropdown.Item as={Link} to="/sales/sales-report-page">Sales Report</NavDropdown.Item> */}
