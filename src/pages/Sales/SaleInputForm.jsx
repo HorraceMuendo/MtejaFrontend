@@ -22,7 +22,7 @@ const SalesInputForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/sales', salesData); // API to save sales data
+      await axios.post('http://localhost:6969/sales/add', salesData); // API to save sales data
       alert('Sales data saved successfully');
       setSalesData({ date: '', amount: 0, category: '' }); // Reset form
     } catch (error) {

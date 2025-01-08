@@ -1,46 +1,58 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import "../../styles/leads.css"
 
 const SalesReport = () => {
   const [salesData, setSalesData] = useState([]);
-  const [dateRange, setDateRange] = useState('');
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
-  const handleGenerateReport = async () => {
-    setLoading(true);
-    try {
-      const response = await axios.get(`http://localhost:6969/report/sales?dateRange=${dateRange}`);
-      setSalesData(response.data);
-    } catch (error) {
-      console.error('Error fetching sales report:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
+  // Fetch sales data from the backend
+  useEffect(() => {
+    const fetchSalesData = async () => {
+      try {
+        const response = await axios.get('http://localhost:6969/sales/list'); // API to get sales data
+        setSalesData(response.data);
+      } catch (error) {
+        console.error('Error fetching sales data', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchSalesData();
+  }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   return (
-    <div>
-      <h1>Sales Report</h1>
-      <input 
-        type="text" 
-        placeholder="Enter date range (e.g., 2023-01-01 to 2023-12-31)"
-        value={dateRange}
-        onChange={(e) => setDateRange(e.target.value)}
-      />
-      <button onClick={handleGenerateReport} disabled={loading}>
-        {loading ? 'Generating...' : 'Generate Report'}
-      </button>
-
-      {salesData.length > 0 && (
-        <div>
-          <h2>Report Results</h2>
-          <ul>
-            {salesData.map(sale => (
-              <li key={sale.id}>{sale.productName}: {sale.amount}</li>
-            ))}
-          </ul>
-        </div>
-      )}
+    <div className='sales-report'>
+      <h2>Sales Data Report</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Amount</th>
+            <th>Category</th>
+          </tr>
+        </thead>
+        <tbody>
+          {salesData.length > 0 ? (
+            salesData.map((item, index) => (
+              <tr key={index}>
+                <td>{item.date}</td>
+                <td>{item.amount}</td>
+                <td>{item.category}</td>
+              </tr>
+            ))
+          ) : (
+            <tr>
+              <td colSpan="3">No sales data available</td>
+            </tr>
+          )}
+        </tbody>
+      </table>
     </div>
   );
 };

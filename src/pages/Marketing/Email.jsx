@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../../styles/leads.css'
 
 const SendBulkEmail = () => {
     const [message, setMessage] = useState(''); // State to manage the message displayed

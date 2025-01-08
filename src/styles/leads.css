@@ -3,3 +3,50 @@
     padding: 40px;
 
 }
+
+.leads table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .leads table th,
+  .leads table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .leads table th {
+    background-color: #f4f4f4;
+  }
+  
+  .leads table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+
+
+.sales-report {
+    padding: 20px;
+  }
+  
+  .sales-report table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .sales-report table th,
+  .sales-report table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .sales-report table th {
+    background-color: #f4f4f4;
+  }
+  
+  .sales-report table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  

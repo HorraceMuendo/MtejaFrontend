@@ -1,0 +1,5 @@
+<td>
+                {/* <button onClick={() => deleteLead(lead._id)}>Delete</button> */}
+                <button onClick={() => deleteLead(lead.id)}>Delete</button>
+
+              </td>

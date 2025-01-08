@@ -12,14 +12,26 @@ const LeadsList = () => {
       .catch((error) => console.error("Error fetching leads", error));
   }, []);
 
-  const deleteLead = (id) => {
-    axios
-      .delete(`http://localhost:5000/api/leads/${id}`)
-      .then(() => {
-        setLeads(leads.filter((lead) => lead._id !== id));
-      })
-      .catch((error) => console.error("Error deleting lead", error));
+  // const deleteLead = (id) => {
+  //   axios
+  //     .delete(`http://localhost:6969/sales/delete/${id}`)
+  //     .then(() => {
+  //       setLeads(leads.filter((lead) => lead._id !== id));
+  //     })
+  //     .catch((error) => console.error("Error deleting lead", error));
+  // };
+
+  // Delete a task
+  const deleteLead = async (id) => {
+    try {
+      await axios.delete(`http://localhost:6969/sales/delete/${id}`); // Add your endpoint to delete tasks
+      const filteredLeads = leads.filter(lead => lead.id !== id);
+      setLeads(filteredLeads);
+    } catch (error) {
+      console.error('Error deleting the task:', error);
+    }
   };
+
 
   return (
     <div className="leads">
@@ -30,7 +42,7 @@ const LeadsList = () => {
             <th>Name</th>
             <th>Email</th>
             <th>Status</th>
-            <th>Action</th>
+            {/* <th>Action</th> */}
           </tr>
         </thead>
         <tbody>
@@ -39,9 +51,7 @@ const LeadsList = () => {
               <td>{lead.name}</td>
               <td>{lead.email}</td>
               <td>{lead.status}</td>
-              <td>
-                <button onClick={() => deleteLead(lead._id)}>Delete</button>
-              </td>
+              
             </tr>
           ))}
         </tbody>
@@ -51,3 +61,5 @@ const LeadsList = () => {
 };
 
 export default LeadsList;
+
+

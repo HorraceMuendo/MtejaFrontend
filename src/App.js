@@ -9,21 +9,18 @@ import Reports from './pages/Reports/Reports';
 import ProductList from './pages/Products/ProductList';
 import AddProduct from './pages/Products/AddProduct';
 import Dashboard from './pages/Dashboard';
-import ReportForm from './pages/Reports/ReportsForm';
 import Enquiries from './pages/Customers/Enquiries';
 import Compliments from './pages/Customers/Compliments';
 import Complains from './pages/Customers/Complains';
 import Contact from './pages/Customers/Contact';
-import TaskManagement from './pages/TaskManagement';
-import Employees from './pages/Employees/Employees';
-import AddEmployee from './pages/Employees/AddEmployees';
-import AnalyticsDashboard from './pages/Analytics';
+import TaskManagement from './pages/Tasks/TaskManagement';
 import Dash from './pages/Sales/Dashboard';
 import LeadForm from './pages/Sales/LeadForm';
-import LeadsList from './pages/Sales/LeadList';
-import SalesChart from './pages/Sales/SalesChart';
-import SalesReportPage from './pages/Sales/SalesReportPage';
+import LeadsList from './pages/Reports/LeadList';
 import SalesInputForm from './pages/Sales/SaleInputForm';
+import SendBulkEmail from './pages/Marketing/Email';
+import Tasks from './pages/Tasks/Tasks';
+import SalesReport from './pages/Reports/SalesReport';
 
 
 
@@ -44,9 +41,8 @@ function App() {
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/products/list" element={<ProductList/>} />
                 <Route path="/products/add" element={<AddProduct/>} />
-                <Route path="/employee/list" element={<Employees/>} />
-                <Route path="/employee/add" element={<AddEmployee/>} />
                 <Route path="/tasks" element={<TaskManagement />} />
+                <Route path="/tasks/list" element={<Tasks />} />
                 <Route path="/enquiries" element={<Enquiries />} />
                 <Route path="/complains" element={<Complains />} />
                 <Route path="/compliments" element={<Compliments />} />
@@ -54,14 +50,14 @@ function App() {
                 
                 <Route path="/user" element={<User />} />
                 <Route path="/report" element={<Reports/>} />  
-                <Route path="/report/add" element={<ReportForm/>} />  
-                <Route path="/analytics" element={<AnalyticsDashboard />} />
+                <Route path="/sales/report" element={<SalesReport />} />
+
                 <Route path="/sales/dashboard" element={<Dash />} />
                 <Route path="/sales/leadform" element={<LeadForm />} />
                 <Route path="/sales/leadlist" element={<LeadsList />} />
-                <Route path="/sales/saleschart" element={<SalesChart />} />
-                <Route path="/sales/sales-report-page" element={<SalesReportPage />} />
                 <Route path="/sales/saleinputform" element={<SalesInputForm />} />
+                <Route path="/email" element={<SendBulkEmail/>} />
+
 
 
 
