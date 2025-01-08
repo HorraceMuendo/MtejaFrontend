@@ -60,7 +60,7 @@ function Header() {
 
           </NavDropdown>
 
-          <Nav.Link as={Link} to="/user">Account</Nav.Link>
+          <Nav.Link as={Link} to="/logout">Log Out</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

@@ -1,4 +1,109 @@
 
+// import React, { useState } from 'react';
+// import { Button, Container, Form } from 'react-bootstrap';
+// // import { BsPersonCircle } from 'react-icons/bs';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import '../styles/UserProfile.css';
+// import axios from 'axios';
+
+// const UserModal = ({ show, handleClose, userDetails, handleUpdate }) => {
+//   const [formData, setFormData] = useState(userDetails);
+
+//   const handleChange = (e) => {
+//     const { name, value } = e.target;
+//     setFormData((prevData) => ({
+//       ...prevData,
+//       [name]: value,
+//     }));
+//   };
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     handleUpdate(formData);  // Trigger the update function with new data
+//     handleClose();  // Close the modal
+//   };
+
+//   return (
+//     <Container className='profile-container'>
+//       <h2 className="user-title">User Details</h2> 
+//       <Form className='user-form' onSubmit={handleSubmit}>
+//         <Form.Group controlId="formName">
+//           <Form.Label>Username</Form.Label>
+//           <Form.Control
+//             type="text"
+//             name="name"
+//             value={formData.name}
+//             onChange={handleChange}
+//           />
+//         </Form.Group>
+//         <Form.Group controlId="formEmail">
+//           <Form.Label>Email</Form.Label>
+//           <Form.Control
+//             type="email"
+//             name="email"
+//             value={formData.email}
+//             onChange={handleChange}
+//           />
+//         </Form.Group>
+//         <Form.Group controlId="formPassword">
+//           <Form.Label>Password</Form.Label>
+//           <Form.Control
+//             type="password"
+//             name="password"
+//             value={formData.password}
+//             onChange={handleChange}
+//           />
+//         </Form.Group>
+//         <Button variant="primary" type="submit" className='user-button'>
+//           Save Changes
+//         </Button>
+//       </Form>
+//     </Container>  
+//   );
+// };
+
+// const UserProfile = () => {
+//   const [showModal, setShowModal] = useState(false);
+//   const [userDetails, setUserDetails] = useState({
+//     name: 'John Doe',
+//     email: 'john.doe@example.com',
+//     password: '',  // Password initially empty
+//   });
+
+//   const handleShow = () => setShowModal(true);
+//   const handleClose = () => setShowModal(false);
+
+//   const handleUpdate = (updatedDetails) => {
+//     // API call to update the user details
+//     axios.put('http://localhost:6969/users/updateProfile', updatedDetails)
+//       .then((response) => {
+//         console.log("Profile updated successfully:", response.data);
+//         setUserDetails(updatedDetails);  // Update the local state with new details
+//       })
+//       .catch((error) => {
+//         console.log("Error updating profile:", error);
+//       });
+//   };
+
+//   return (
+//     <div className="UserProfile">
+//       {/* <BsPersonCircle className="icon" size={40} onClick={handleShow} style={{ cursor: 'pointer' }} /> */}
+//       <UserModal 
+//         show={showModal} 
+//         handleClose={handleClose} 
+//         userDetails={userDetails} 
+//         handleUpdate={handleUpdate} 
+//       />
+//     </div>
+//   );
+// };
+
+// export default UserProfile;
+
+
+
+
+
 import React, { useState } from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
 // import { BsPersonCircle } from 'react-icons/bs';
@@ -99,6 +204,11 @@ const UserProfile = () => {
 };
 
 export default UserProfile;
+
+
+
+
+
 
 
 // import React, { useState, useEffect } from "react";

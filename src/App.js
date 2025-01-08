@@ -18,9 +18,10 @@ import Dash from './pages/Sales/Dashboard';
 import LeadForm from './pages/Sales/LeadForm';
 import LeadsList from './pages/Reports/LeadList';
 import SalesInputForm from './pages/Sales/SaleInputForm';
-import SendBulkEmail from './pages/Marketing/Email';
 import Tasks from './pages/Tasks/Tasks';
 import SalesReport from './pages/Reports/SalesReport';
+import LogoutPage from './pages/LogOut';
+import EmailPage from './pages/Marketing/Email';
 
 
 
@@ -56,7 +57,9 @@ function App() {
                 <Route path="/sales/leadform" element={<LeadForm />} />
                 <Route path="/sales/leadlist" element={<LeadsList />} />
                 <Route path="/sales/saleinputform" element={<SalesInputForm />} />
-                <Route path="/email" element={<SendBulkEmail/>} />
+                <Route path="/email" element={<EmailPage/>} />
+                <Route path="/logout" element={<LogoutPage/>} />
+
 
 
 
